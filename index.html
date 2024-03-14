@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Samis Portfolio</title>
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f4b5e44d77.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="hdr">
+        <div class="container">
+            <nav>
+                <img src="pictures/LOGO SG KLAR WHITE.png" class="logo">
+                <ul id="phone-menu">
+                    <li><a href="#hdr">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-archway" onclick="openmenu()"></i>
+            </nav>
+            <article class="header-text">
+                <p>Fullstack utvecklare</p>
+                <h1>Välkommen till min sida,<br>mitt namn är <span id="change1">Sami Goran</span></h1>
+            </article>
+        </div>
+    </header>
+
+    <main>
+        <!-- ---------------------------About me-------------------------------->
+        <section id="about">
+            <div class="row">
+                <div class="about-column1">
+                    <img src="pictures/me.jpg">
+                </div>
+                <article class="about-column2">
+                    <h1 class="t1">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis officiis quidem laborum tempore
+                        aperiam totam placeat! Assumenda, quos maxime. Odit facilis sed quasi totam quidem eum modi non
+                        impedit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quia laborum nisi
+                        architecto perspiciatis, aperiam illo dolor ex magni, quasi eum minima accusantium, eaque
+                        quibusdam a in. Totam, modi mollitia?</p>
+                    <div class="tab-t1">
+                        <p class="tab-links active-l" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-con active-tab" id="Skills">
+                        <ul>
+                            <li><span>Fullstack</span><br>developing web/database solutions</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Database managment</span><br>Database solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-con" id="Experiance">
+                        <ul>
+                            <li><span>2019-2021</span><br>Project engineer/designer at siav Arkitekt</li>
+                            <li><span>2021-2022</span><br>Project Manager/ tekla-designer at Smederna</li>
+                        </ul>
+                    </div>
+                    <div class="tab-con" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>plumber education specializing in HVAC</li>
+                            <li><span>2021</span><br>bachelor's degree in structural engineering.</li>
+                            <li><span>2025</span><br>2 year specialization in fullstack development and completed my
+                                degrees</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ----------------------------Services----------------------------------------- -->
+        <section id="Services">
+            <article class="container">
+                <h1 class="t1">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Frontend</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur deserunt
+                            mollitia fugit placeat nostrum eos maiores, possimus quibusdam eligendi numquam, voluptatum
+                            eveniet adipisci soluta esse fuga sapiente explicabo libero?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Backend</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur deserunt
+                            mollitia fugit placeat nostrum eos maiores, possimus quibusdam eligendi numquam, voluptatum
+                            eveniet adipisci soluta esse fuga sapiente explicabo libero?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <h2>UX design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur deserunt
+                            mollitia fugit placeat nostrum eos maiores, possimus quibusdam eligendi numquam, voluptatum
+                            eveniet adipisci soluta esse fuga sapiente explicabo libero?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!------------------------------Portfolio------------------------------------------->
+        <section id="Portfolio">
+            <article class="container">
+                <h1 class="t1">My Portfolio</h1>
+                <div class="WorkList">
+                    <div class="Work">
+                        <img src="pictures/Api.jpg">
+                        <div class="Layer">
+                            <h3>Minimal-API Project</h3>
+                            <p>The API will enable external services and applications to fetch and modify data in your
+                                own application.</p>
+                            <a href="https://github.com/Sami3Goran/MiniProjektAPI.git" target="_blank"><i
+                                    class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="Work">
+                        <img src="pictures/Bank.jpg">
+                        <div class="Layer">
+                            <h3>The Bank</h3>
+                            <p>This is a more advanced Console application in C# that includes database connections. It
+                                simulates an online banking system.</p>
+                            <a href="https://github.com/ETW-BANK/ETWBankATM.git" target="_blank"><i
+                                    class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="Work">
+                        <img src="pictures/Music2.jpg">
+                        <div class="Layer">
+                            <h3>Music-Api</h3>
+                            <p> This API utilizes a REST architecture It leverages both a database and retrieval of
+                                information from an external API</p>
+                            <a href="https://github.com/Sami3Goran/UnderDogProjectMusicApi.git" target="_blank"><i
+                                    class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Sami3Goran" target="_blank" class="btn">See more</a>
+            </article>
+        </section>
+        <!-- ------------------------------------Contact----------------------------- -->
+        <section id="Contact">
+            <article class="container">
+                <div class="row">
+                    <div class="contact-bar">
+                        <h1 class="t1">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>ContactMe@email.com</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i>070xxxxxxx</p>
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=sv" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
+                        <a href="Cv  PersonligtB/SamiGoran_CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="lastly">
+        <p>Copyright © Made by Sami Goran 2024 <i class="fa-solid fa-wand-sparkles"></i></p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+
+</html>
